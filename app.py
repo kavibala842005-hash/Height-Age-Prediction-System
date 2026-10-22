@@ -81,7 +81,7 @@ if age_col != height_col:
     with col3:
         st.metric("Mean Absolute Error (MAE)", f"{mae:.2f}")
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(3, 2))
     ax.scatter(X, y, label="Actual Height")
 
     sorted_data = data.sort_values(age_col)
@@ -99,7 +99,7 @@ if age_col != height_col:
     ax.set_ylabel(height_col)
     ax.legend()
     st.write("## 📈 Height vs Age Analysis")
-    st.pyplot(fig)
+    st.pyplot(fig, use_container_width=False)
 
     st.write("### Height Prediction")
 
