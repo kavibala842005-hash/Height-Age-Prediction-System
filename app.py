@@ -101,7 +101,7 @@ if age_col != height_col:
     st.write("## 📈 Height vs Age Analysis")
     st.pyplot(fig)
 
-    st.write("###Height Prediction")
+    st.write("### Height Prediction")
 
     age_value = st.number_input(
         "Enter Age",
